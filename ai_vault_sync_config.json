@@ -1,0 +1,20 @@
+{
+  "vault": "/Users/YOURUSERNAME/vault",
+  "services": {
+    "chatgpt": {
+      "export": "/Users/YOURUSERNAME/Downloads/chatgpt-export.zip"
+    },
+    "deepseek": {
+      "export": "/Users/YOURUSERNAME/Downloads/deepseek-export.zip"
+    },
+    "gemini": {
+      "export": "/Users/YOURUSERNAME/Downloads/gemini-takeout.zip"
+    },
+    "grok": {
+      "export": "/Users/YOURUSERNAME/Downloads/grok-export.zip"
+    },
+    "perplexity": {
+      "inbox": "/Users/YOURUSERNAME/Downloads/perplexity-inbox"
+    }
+  }
+}
