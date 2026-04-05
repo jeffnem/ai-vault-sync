@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <key>Label</key>
+  <string>com.jeffnemecek.ai-vault-sync</string>
+
+  <!--
+    Adjust these paths before installing:
+      [0]  Full path to python3  →  run: which python3
+      [1]  Full path to ai_vault_sync.py
+      [2]  Full path to your config file (copy ai_vault_sync_config.json to ~/.ai_vault_sync.json)
+  -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/YOURUSERNAME/scripts/ai_vault_sync/ai_vault_sync.py</string>
+    <string>--config</string>
+    <string>/Users/YOURUSERNAME/.ai_vault_sync.json</string>
+    <string>--quiet</string>
+  </array>
+
+  <!-- Run daily at 8:00 AM -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>8</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/YOURUSERNAME/Library/Logs/ai-vault-sync.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/YOURUSERNAME/Library/Logs/ai-vault-sync-error.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+</dict>
+</plist>
